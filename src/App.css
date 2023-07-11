@@ -4,3 +4,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.App {
+  position: absolute;
+  min-width: 100%;
+}

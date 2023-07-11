@@ -1,12 +1,10 @@
 import React from 'react';
-import icon from './cart'
-
+import './styles.css';
+import CartLogo from './cart.svg';
 const CartWidget = () => {
-  //la lógica va siempre antes del return
   return (
     <div className="cart-widget">
-      {/* Acá puede ir cualquier ícono que quieran. En mi caso, estoy usando FontAwesome para React JS. */}
-      <icon size="2x" color="white" />
+      <img src={CartLogo} alt="un logo lindo de carrito" />
       <div className="qty-display">0</div>
     </div>
   );
