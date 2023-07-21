@@ -71,7 +71,7 @@ nav {
     background-color: rgba(29, 29, 29, 0.9);
 }
 
-.arrow::after {
+/* .arrow::after {
     width: 5px;
     height: 5px;
     transform: rotate(135deg);
@@ -80,9 +80,9 @@ nav {
     content: '';
     background-color: transparent;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: middle; 
     transition: all 0.4s ease-in-out 0s;
-}
+} */
 
 /*Voy a incluir mis mediaqueries acá*/
 

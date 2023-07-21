@@ -1,11 +1,18 @@
 import React from 'react';
+import Item from '../Item';
+import FetchData from '../../CustomHooks/FetchData';
 
-const ItemListContainer = ({greetings}) => {
-  
+const ItemListContainer = () => {
+  //const [productos, setProductos] = useState([]);
+  const data  = FetchData("https://fakestoreapi.com/products")
+
   return (
-    <div style={{height:'90vh', backgroundColor:'#6c757d'}}>
-     <h1 style={{color:'white'}}>{greetings}</h1>
-    </div>
+    <>
+      {
+        //console.log(data)
+        data.map((id,title) => { return <Item title={title} /> })
+      }
+    </>
   );
 };
 
